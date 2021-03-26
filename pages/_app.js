@@ -73,7 +73,7 @@ const MyApp = ({ Component, pageProps, router }) => {
         <LazyMotion features={domAnimation}>
           {isLoading && (
             <Head>
-              <title>Loading...</title>
+              <title>Loading...!!</title>
             </Head>
           )}
           <AnimatePresence
