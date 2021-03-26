@@ -19,17 +19,17 @@ function StructureMenuWidget(props) {
 
       <div className={styles.content}>
         {props.structure.items
-          .filter(function (item) {
+          .filter(function(item) {
             if (item.type === 'divider') {
               return false
             }
             return true
           })
-          .map((item) => {
+          .map(item => {
             const Icon = getIconComponent(item)
             return (
               <div key={item.id}>
-                <Link className={styles.link} href={`studio/desk/${item.id}`}>
+                <Link className={styles.link} href={`/desk/${item.id}`}>
                   <div className={styles.iconWrapper}>
                     <Icon />
                   </div>
